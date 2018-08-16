@@ -1,0 +1,1 @@
+sudo dpkg --purge --force-all $(dpkg -l | grep python3-sawtooth-* | awk '{print $2}' | tr '\n' ' ')
